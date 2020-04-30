@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 31.021 sec <<< FAILURE!
+verifyLoggedInUserTest(com.qa.hubspot.test.HomePageTest)  Time elapsed: 0.074 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Manhattan] but found [null]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.qa.hubspot.test.HomePageTest.verifyLoggedInUserTest(HomePageTest.java:54)
+
+verifyLoginTest(com.qa.hubspot.test.LoginPageTest)  Time elapsed: 2.192 sec  <<< FAILURE!
+java.lang.AssertionError: Login failed expected [Manhattan] but found [null]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at com.qa.hubspot.test.LoginPageTest.verifyLoginTest(LoginPageTest.java:50)
+
