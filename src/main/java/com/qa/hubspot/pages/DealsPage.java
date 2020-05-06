@@ -6,6 +6,7 @@ public class DealsPage extends BasePage {
 	
 	public DealsPage(){
 		System.out.println("Deal page constructor");
+		System.out.println("git upload");
 	}
 	
 

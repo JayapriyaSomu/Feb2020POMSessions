@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import com.qa.hubspot.utils.Constants;
 import com.qa.hubspot.utils.ElementUtil;
 
+import io.qameta.allure.Step;
+
 public class HomePage {
 	
 	WebDriver driver;
@@ -22,12 +24,13 @@ public class HomePage {
 		elementUtil = new ElementUtil(driver);
 	}
 
+	@Step("get home page title....")
 	public String getHomePageTitle(){
 		return elementUtil.waitForTitlePresent(Constants.HOME_PAGE_TITLE, 10);
 	
 	}
 	
-	
+	@Step("get home page header....")
 	public String getHomePageHeader() {
 		if(elementUtil.doIsDisplayed(header)){
 			return elementUtil.doGetText(header);
@@ -35,6 +38,7 @@ public class HomePage {
 		return null;
 	}
 	
+	@Step("get Account name on home page.....")
 	public String getAccountName() {
 		System.out.println("accountName is : " + accountName);
 		elementUtil.waitForElementPresent(accountName, 10);
@@ -45,6 +49,7 @@ public class HomePage {
 		}
 	}
 	
+	@Step("go to Contacts page....")
 	public ContactsPage goToContactsPage(){
 		clickOnContacts();
 		return new ContactsPage(driver);
