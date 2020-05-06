@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [HubSpot Regression Test Suite]">
+  <listeners>
+    <listener class-name="com.qa.hubspot.listeners.TesultsListener"/>
+    <listener class-name="com.qa.hubspot.listeners.ScreenshotListener"/>
+  </listeners>
+  <test thread-count="5" name="Regression Functional Test(failed)">
     <classes>
-      <class name="com.qa.hubspot.test.ContactsPageTest">
+      <class name="com.qa.hubspot.test.LoginPageTest">
         <methods>
-          <include name="createNewContactTest" invocation-numbers="0 1 2"/>
-          <include name="tearDown"/>
+          <include name="verifyLoginTest"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.hubspot.test.ContactsPageTest -->
+      </class> <!-- com.qa.hubspot.test.LoginPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Regression Functional Test(failed) -->
+</suite> <!-- Failed suite [HubSpot Regression Test Suite] -->

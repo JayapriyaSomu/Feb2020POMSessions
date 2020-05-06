@@ -2,9 +2,9 @@ package com.qa.hubspot.pages;
 
 import com.qa.hubspot.base.BasePage;
 
-public class DealsPage extends BasePage {
+public class OrderPage extends BasePage {
 	
-	public DealsPage(){
+	public OrderPage(){
 		System.out.println("Deal page constructor");
 		System.out.println("git upload");
 	}

@@ -1,103 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[<a href='E:\javawork\Feb2020POMSessions\target\surefire-reports\failure_screenshots\verifyLoginTest_06_05_2020_02_02_39.png'> <img src='E:\javawork\Feb2020POMSessions\target\surefire-reports\failure_screenshots\verifyLoginTest_06_05_2020_02_02_39.png' height='100' width='100'/> </a>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40225" started-at="2020-04-29T21:21:16Z" finished-at="2020-04-29T21:21:56Z">
+  <suite name="HubSpot Regression Test Suite" duration-ms="30905" started-at="2020-05-06T18:02:10Z" finished-at="2020-05-06T18:02:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40225" started-at="2020-04-29T21:21:16Z" finished-at="2020-04-29T21:21:56Z">
-      <class name="com.qa.hubspot.test.ContactsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.test.ContactsPageTest@4667ae56]" name="setUp" is-config="true" duration-ms="18251" started-at="2020-04-29T21:21:16Z" finished-at="2020-04-29T21:21:34Z">
+    <test name="Regression Functional Test" duration-ms="30905" started-at="2020-05-06T18:02:10Z" finished-at="2020-05-06T18:02:41Z">
+      <class name="com.qa.hubspot.test.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@3abd581e]" name="setUp" is-config="true" duration-ms="21695" started-at="2020-05-06T18:02:11Z" finished-at="2020-05-06T18:02:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyContactsPageTitle()[pri:1, instance:com.qa.hubspot.test.ContactsPageTest@4667ae56]" name="verifyContactsPageTitle" duration-ms="15" started-at="2020-04-29T21:21:34Z" finished-at="2020-04-29T21:21:34Z">
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.test.LoginPageTest@3abd581e]" name="verifyLoginPageTitleTest" duration-ms="928" started-at="2020-05-06T18:02:32Z" finished-at="2020-05-06T18:02:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyContactsPageTitle -->
-        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.hubspot.test.ContactsPageTest@4667ae56]" name="createNewContactTest" duration-ms="7236" started-at="2020-04-29T21:21:35Z" data-provider="getContactsTestData" finished-at="2020-04-29T21:21:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[raj@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[raj]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[b]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Manager]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:2, instance:com.qa.hubspot.test.LoginPageTest@3abd581e]" name="verifySignUpLinkTest" duration-ms="445" started-at="2020-05-06T18:02:34Z" finished-at="2020-05-06T18:02:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewContactTest -->
-        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.hubspot.test.ContactsPageTest@4667ae56]" name="createNewContactTest" duration-ms="7592" started-at="2020-04-29T21:21:42Z" data-provider="getContactsTestData" finished-at="2020-04-29T21:21:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[priya@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[priya]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[s]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[SDET]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifySignUpLinkTest -->
+        <test-method status="FAIL" signature="verifyLoginTest()[pri:3, instance:com.qa.hubspot.test.LoginPageTest@3abd581e]" name="verifyLoginTest" duration-ms="3607" started-at="2020-05-06T18:02:34Z" finished-at="2020-05-06T18:02:38Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed expected [Manhattan] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed expected [Manhattan] but found [null]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.qa.hubspot.test.LoginPageTest.verifyLoginTest(LoginPageTest.java:64)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[<a href='E:\javawork\Feb2020POMSessions\target\surefire-reports\failure_screenshots\verifyLoginTest_06_05_2020_02_02_39.png'> <img src='E:\javawork\Feb2020POMSessions\target\surefire-reports\failure_screenshots\verifyLoginTest_06_05_2020_02_02_39.png' height='100' width='100'/> </a>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- createNewContactTest -->
-        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.hubspot.test.ContactsPageTest@4667ae56]" name="createNewContactTest" duration-ms="6008" started-at="2020-04-29T21:21:50Z" data-provider="getContactsTestData" finished-at="2020-04-29T21:21:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[JP@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[JP]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[S]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[student]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewContactTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.test.ContactsPageTest@4667ae56]" name="tearDown" is-config="true" duration-ms="625" started-at="2020-04-29T21:21:56Z" finished-at="2020-04-29T21:21:56Z">
+        </test-method> <!-- verifyLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@3abd581e]" name="tearDown" is-config="true" duration-ms="1287" started-at="2020-05-06T18:02:40Z" finished-at="2020-05-06T18:02:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.hubspot.test.ContactsPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.qa.hubspot.test.LoginPageTest -->
+    </test> <!-- Regression Functional Test -->
+  </suite> <!-- HubSpot Regression Test Suite -->
 </testng-results>
