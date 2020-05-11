@@ -50,6 +50,7 @@ public class LoginPageTest {
 	@Description("Verify Sign up Page Test")
 	@Severity(SeverityLevel.CRITICAL)
 	public void verifySignUpLinkTest(){
+		System.out.println("Verify Sign up Link Test");
 		Assert.assertTrue(loginPage.checkSignUpLink(), "Sign up link not present");
 	}
 	
