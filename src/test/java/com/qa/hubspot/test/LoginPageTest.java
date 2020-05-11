@@ -58,6 +58,7 @@ public class LoginPageTest {
 	@Description("Verify User Login Page Test")
 	@Severity(SeverityLevel.BLOCKER)
 	public void verifyLoginTest(){
+		System.out.println("Verify Login Test");
 		HomePage homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		System.out.println("Account name from home page is "  + homePage.getAccountName());
 		System.out.println("Account name from config file is : " + prop.getProperty("accountname"));
